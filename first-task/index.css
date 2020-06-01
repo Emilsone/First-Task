@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body, section, article, aside {
+    min-height: 100%;
+}
+
+article > aside {
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+figure {
+    margin-left: 50%;
+    height: 100vh;
+}
+figure:first-of-type {
+    margin-top: -100vh;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * *\
+|* Coloring and styling so things look cute  *|
+\* * * * * * * * * * * * * * * * * * * * * * */
+article > aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+article:nth-of-type(1) > aside {  background-color: #3c3;  }
+article:nth-of-type(2) > aside {  background-color: #c33;  }
+
+figure {
+    background-image: url("Cart\ View\ –\ 1@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #444;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+p {
+    font-size: 18px;
+}
+hr {
+    width: 50%;
+    background-color: #fff;
+    margin: 30px;
+    height: 1px;
+}
+
+.spacing {
+    margin: 30px auto;
+    padding: 30px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+.spacing:first-letter {
+    line-height: 1;
+    font-size: 30px;
+    font-weight: bold;
+}
